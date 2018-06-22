@@ -1,0 +1,65 @@
+
+.cvd-g-tips {
+  position: fixed;
+  z-index: 20000;
+  top:5px;
+  left:50%;
+  margin-left: -300px;
+  padding:0 16px;
+  width: 600px;
+  height: 0;
+
+  display: none;
+  &.show{
+    height: 40px;
+    display: block;
+    transition:.5s;
+  }
+  
+  border-radius: 4px;
+  background-color: #fffaeb;
+  border: solid 1px #fbeab8;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+  &.type1{
+    background-color: #ebf8f2;
+    border: solid 1px #cfefdf;
+  }
+  &.type2{
+    background-color: #ecf6fd;
+    border: solid 1px #d2eafb;
+  }
+  &.type3{
+    background-color: #fef0ef;
+    border: solid 1px #fcdbd9;
+  }
+  .tips-content{
+    line-height: 40px;
+  }
+  .tips-icon{
+    font-size: 20px;
+    margin-right: 11px;
+    vertical-align: sub;
+  }
+  .ion-android-alert{
+    color: #f7b710;
+  }
+  .ion-checkmark-circled{
+    color: #00a854;
+  }
+  .ion-information-circled{
+    color: #108ee9;
+  }
+  .ion-android-cancel{
+    color: #f04134;
+  }
+
+  .ion-android-close{
+    float: right;
+    position: relative;
+    top:12px;
+    font-size: 14px;
+    color: rgba(102, 102, 102, 0.6);
+    cursor: pointer;
+  }
+}

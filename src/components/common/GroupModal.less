@@ -1,0 +1,186 @@
+
+.group_modal__kdfF6{
+    //global
+    .ant-modal-header{
+        border-bottom: 1px solid #42bbc1;
+    }
+    .ant-modal-title{
+        font-size: 12px;
+    }
+    .ant-modal-body{
+        padding: 0;
+    }
+    .scrollarea{
+        max-height: 300px;
+    }
+    .custom_main{
+        position: relative;
+        padding-top: 16px;
+        .category-left{
+            width: 140px;
+            position: absolute;
+            top: 5px;
+            left: 0;
+            bottom: 0;
+            background: #f4f6f5;
+            overflow-y: auto;
+            .top-add-area{
+                padding:0 12px 1px;
+                background: #fff;
+                .name{
+                    font-weight: bold;
+                    line-height: 42px;
+                }
+                .fa-plus-square{
+                    color: #666;
+                    float: right;
+                    margin-top: 14px;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+                .cvd-input{
+                    display: block;
+                    margin:7px 0;
+                    width: 100%;
+                }
+            }
+            .group-item{
+                padding:0 8px 0 16px;
+                .cvd-input{
+                    width: 100%;
+                }
+                &.active{
+                    background-color: #e8eef4;
+                }
+                .edit-area{
+                    position: absolute;
+                    right: 8px;
+                    top: 1px;
+                }
+               
+                &.status2{
+                    .name-ipt{
+                        padding: 0; 
+                        background: none;
+                        border: none;
+                    }
+                    .btn-area{
+                        top: 0;
+                        right: 2px;
+                    }
+                    .del{
+                        padding-right: 2px;
+                        margin-right: 2px;
+                    }
+                }
+            }
+
+
+        }
+        .category-right{
+            height: 300px;
+            overflow-y: auto;
+            padding-left: 140px;
+            .lb-name{
+                margin:0 0 14px 24px;
+                font-weight: bold;
+            }
+        }
+        .group-item{
+            position: relative;
+            height: 46px;
+            line-height: 46px;
+            padding: 0 24px;
+            .group-name{
+                color: rgba(0, 0, 0, 0.7);
+            }
+            &:hover{
+                background-color: #e8eef4;
+                .group-name{
+                    color: #4f6990;
+                }
+                .edit-area{
+                    display: block;
+                }
+                transition:0.5s;
+            }
+            .edit-area{
+                float: right;
+                display: none;
+                .fa-pencil-square-o,.ion-android-remove-circle{
+                    margin-left: 12px;
+                    cursor: pointer;
+                    color: rgba(0,0,0,0.6);
+                    &:hover{
+                        color: #4f6990;
+                    }
+                }
+            }
+            
+            &.status1,&.status2{
+                .cvd-input{
+                  display: inline-block;
+                  width: 100%;
+                  height: 32px;
+                  line-height: 32px;
+                }
+                &:hover{
+                    background: none;
+                }
+                
+                .btn-area{
+                    position: absolute;
+                    top: 5px;
+                    right: 20px;
+
+                }
+
+                .del{
+                    padding-right: 8px;
+                    margin-right: 8px;
+                    border-right: 1px solid rgba(0,0,0,0.1);
+                    cursor: pointer;
+                    color: #f7b710;
+                    &:hover{
+                        color: #e7ac0f;
+                    }
+                }
+                .cancel{
+                    color: rgba(0,0,0,0.4);
+                    cursor: pointer;
+                }
+            }
+            
+        }
+    }
+    .custom_footer{
+        padding-left: 140px;
+        height: 64px;
+        border-top:1px solid rgba(0, 0, 0, 0.1);
+        .add-group-btn{
+            float: right;
+            margin-top: 16px;
+            margin-right: 138px;
+        }
+        .add-btn-wrap{
+            margin-top: 16px;
+            margin-left: 24px;
+        }
+        .gname-ipt-wrap {
+          float: left;
+          margin-right: 12px;
+          padding: 0 12px;
+          width: 220px;
+          height: 32px;
+          border-radius: 4px;
+          background-color: #ffffff;
+          border: solid 1px rgba(0, 0, 0, 0.1);
+        }
+        .gname-ipt{
+            width: 100%;
+            height: 100%;
+            border:none;
+            outline: none;
+        }
+    }
+}

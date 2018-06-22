@@ -1,0 +1,227 @@
+@import url(./less/button.less);
+@import url(./less/antd.less);
+@import url(./less/form.less);
+
+body{
+  background: #f4f6f5;
+}
+.red{
+  color:#f00;
+}
+//link
+.link-style{
+  color: #108ee9;
+}
+.route-link{
+  color: #7793c6;
+  cursor: pointer;
+  &:hover{
+     color: #42bcc1;
+  }
+}
+.u-link-normal{
+  &:extend(.route-link all);
+}
+/**
+*   其他通用 样式
+*/
+//layout style
+.common_main{
+    margin: 52px 0 0 40px;
+    position: relative;
+    padding-right: 40px;
+    &.has-right{
+      padding-right: 236px;
+    }
+    .sub-tit{
+        display: inline-block;
+        font-size: 14px;
+        color: #000;
+        font-weight: 600;
+        opacity: 0.7;
+        margin-bottom: 16px;
+        margin-left: 22px;
+        .red{
+          margin-right: 2px;
+          font-weight: bold;
+        }
+        &.has-go-back{
+          margin-left: 0;
+          .go-back{
+            color: #00c3cd;
+            margin-right: 16px;
+          }
+        }
+    }
+    .tt-bar{
+      .right{
+        float: right;
+      }
+      .route-link{
+        margin-left: 16px;
+      }
+    }
+}
+
+//白色带圆角，block块，很多地方用到
+.cvd-w-block{
+  padding: 20px;
+  background: #fff;
+  border: solid 1px #f0f0f0;
+  border-radius: 4px;
+}
+.cvd-gray-block{
+  padding:20px;
+  border:1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background-color: #f5f5f5;
+}
+//半圆角tab，常规问答动态问答，统计中心客服统计 等用到
+.qa-type-tab{
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 27px;
+  .qa-type-wraper{
+    display: inline-block;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: solid 1px #e5e5e5;
+    border-bottom: none;
+  }
+  .type-tab-item{
+      display: inline-block;
+      line-height: 32px;
+      padding:0 18px;
+      border-right: solid 1px #e5e5e5;
+      border-bottom: 1px solid transparent;
+      color: rgba(0, 0, 0, 0.7);
+      cursor: pointer;
+      position: relative;
+      bottom: -1px;
+      min-width: 84px;
+      text-align: center;
+      &.active{
+          color: #00c3cc;
+          cursor: default;
+          border-bottom-color: #fff;
+      }
+      &.last{
+        border-right: none;
+      }
+  }
+  .ion-help-circled{
+    margin-left: 8px;
+    font-size: 13px;
+    color: #cad9e9;
+  }
+}
+//切换tab，半圆角。训练学习 添加样本用到
+.cvd-switch-tab{
+  display: inline-block;
+  line-height: 32px;
+  line-height: 30px;
+  .tab-item{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 18px;
+    border: solid 1px #e5e5e5;
+    border-left: none;
+    &.first{
+      border-left:solid 1px #e5e5e5;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    &.last{
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+    &.active{
+      border-color: #00c3cc;
+      background: #00c3cc;
+      color: #fff;
+    }
+  }
+}
+
+
+//empty
+.empty-list{
+    padding: 20px 0 32px;
+    width: 384px;
+    border-radius: 4px;
+    border: dashed 1px rgba(0, 0, 0, 0.1);
+    margin:60px auto 0;
+    font-size: 12px;
+    color: rgba(0,0,0,0.3);
+    line-height: 1.67;
+    text-align: center;
+    .ion-information-circled{
+        display: block;
+        font-size: 29px;
+    }
+    .cvd-g-btn2{
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+}
+.empty-list2{
+  &:extend(.empty-list all);
+  border:none;
+}
+
+/* 常用的工具类 */
+.f-text-ellipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cvd-marginT20{
+  margin-top: 20px;
+  display: block;
+}
+
+//
+.recharts-custom-tooltip{
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border: solid 1px #f0f0f0;
+  .lb-item{
+    line-height: 1.5;
+  }
+  .item1{
+    color: #e7737e;
+  }
+  .item2{
+    color: #ffb676;
+  }
+  .item3{
+    color: #00cbcb;
+  }
+}
+// 类似列表的黑色标题栏   训练学习-有问题  和提问测试都用到
+.black-h{
+  padding-left: 20px;
+  padding-right: 10px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #505653;
+  color: #fff;
+  .txt{
+    color: #00c3cc;
+  }
+  .drop-down-select{
+    float: right;
+    .fa-sort-desc{
+      margin-left: 4px;
+      position: relative;
+      top:-2px;
+    }
+  }
+}
+
+//区块内loading样式
+.g-inner-loading{
+  text-align: center;
+  padding:10px;
+}

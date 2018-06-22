@@ -1,0 +1,116 @@
+@import url(../../assets/font/ionicons/css/ionicons.min.css);
+@import url(../../assets/font/font-awesome/css/font-awesome.min.css);
+@import url(../../assets/font/cvd_font/iconfont.css);
+@import url(../../assets/font/materialIcons/material-icons.css);
+@import url(../../assets/css/reset.css);
+@import url(../common/common.less);
+@import url(../../assets/css/wxEmoji.css);
+
+
+html,body{
+  height: 100%;
+  #root{
+    height: 100%;
+    font-family: PingFangSC;
+  }
+}
+.main_layout__aHds4{
+	line-height: 1;
+  height: 100%;
+  .g-loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 9999;
+    opacity: 1;
+    .ant-spin{
+      position: absolute;
+      height: 33px;
+      text-align: center;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      color: rgb(66, 187, 193)
+    }
+    .ant-spin-dot{
+      margin: 0 auto 5px;
+    }
+  }
+	.main_content{
+    padding: 62px 0px 0px 180px;
+		transition: padding .3s;
+    height: 100%;
+		&.collapsed{
+			padding-left: 70px;
+			transition: padding-left .3s;
+      .main_header__sdJd0{
+        padding-right: 90px;
+        left: 70px;
+        transition: .3s;
+      }
+		}
+    &.has_descript{
+      padding-top: 82px;
+    }
+	}
+    .main_container{
+      height: 100%;
+      overflow: auto;
+    }
+}
+.m-show-service-expired-modal{
+  width: 380px;
+  .header{
+    i{
+      font-size: 16px;
+      line-height: 1;
+      display: inline-block;
+      position: absolute;
+      right: 24px;
+      top: 10px;
+      color: rgba(0, 0, 0, 0.6);
+      &:hover{
+      color: #4f6990;
+        cursor: pointer;
+      }
+    }
+  }
+  .content{
+    padding-top: 48px;
+    padding-bottom: 24px;
+    p{
+      font-size: 14px;
+      line-height: 2;
+      text-align: center;
+
+    }
+    .phone{
+      font-weight: 600;
+      i{
+        display: inline-block;
+        line-height: 1;
+        font-size: 14px;
+        margin-right: 6px;
+      }
+    }
+  }
+  .footer{
+    line-height: 55px;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    height: 56px;
+    a{
+      color: #42bcc1;
+      font-size: 12px;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
+

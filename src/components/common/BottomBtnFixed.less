@@ -1,0 +1,36 @@
+
+.main_content{
+  &.collapsed{
+    .cvd-bottom-fixed{
+      left: 70px;
+      padding-right: 306px;
+    }
+  }
+  .cvd-bottom-fixed{
+      position: fixed;
+      left: 180px;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      padding-right: 416px;
+      background-color: rgba(0, 0, 0, 0.06);
+      /*hack for safari*/
+      min-height: 40px;
+      height: auto;
+      /* -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0); */
+      /****/
+  }
+  .cvd-bottom-fixed-wraper{
+    .btn-bottom{
+      padding:16px 24px 16px 0;
+      text-align: right;
+      .cvd-gray-btn1{
+        margin-right: 12px;
+      }
+      .cvd-btn-lg{
+        margin-left: 12px;
+      }
+    }
+  }
+} 

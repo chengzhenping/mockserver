@@ -1,0 +1,74 @@
+/**
+*  cvd  form 表单
+*/
+//used in shortcutmodal
+.cvd-input{
+  padding-left: 8px;
+  height: 28px;
+  line-height: 26px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #42bbc1;
+}
+//used in groupselect
+.cvd-input2{
+  padding-left: 8px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  &[disabled]{
+    color: rgba(0, 0, 0, 0.25);
+    border-color: #d9d9d9;
+    box-shadow: none;
+    background: #f7f7f7;
+    cursor: not-allowed;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+}
+
+//used in robot/extract
+.cvd-input3{
+  padding:0 8px;
+  height: 24px;
+  line-height: 22px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: solid 1px #00c3cd;
+}
+.cvd-textarea{
+  &:extend(.cvd-input all);
+  font-size: 10px;
+  line-height: 1.4;
+  height: auto;
+  padding:6px 8px;
+  min-height: 64px;
+}
+
+//gray-border textarea
+.cvd-textarea2{
+  &:extend(.cvd-textarea all);
+  border: solid 1px rgba(0, 0, 0, 0.1);
+}
+//used in custom ,robot-set ,and so on
+.cvd-gray-input{
+  padding: 12px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  &[disabled]{
+    cursor: not-allowed;
+  }
+}
+.cvd-gray-textarea{
+  padding: 8px;
+  line-height: 1.33;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  &[disabled]{
+    cursor: not-allowed;
+
+  }
+}

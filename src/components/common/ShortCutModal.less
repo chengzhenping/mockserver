@@ -1,0 +1,141 @@
+.shortcut_modal{
+  font-size: 12px;
+  .cvd-g-btn2{
+    height: 26px;
+    line-height: 26px;
+  }
+  .scrollarea{
+      max-height: 390px;
+  }
+  .ant-modal-body{
+    padding: 0;
+  }
+  .custom-main{
+    position: relative;
+  }
+  .fa-pencil-square-o{
+    margin-right: 8px;
+  }
+  .fa-pencil-square-o,
+  .ion-android-remove-circle{
+    cursor: pointer;
+    &:hover{
+      color: #42bcc1;
+    }
+  }
+  .cvd-input{
+    width: 183px;
+  }
+  .edit-area{
+    display: none;
+    float: right;
+    margin-right: 16px;
+  }
+  .btn-area{
+    float: right;
+  }
+  .group-item{
+    color: rgba(0, 0, 0, 0.7);
+    &:hover{
+      .edit-area{
+        display: block;
+      }
+    }
+    .group-name{
+      word-break: break-all;
+    }
+  }
+
+  .left-side{
+    padding-top: 24px;
+    width: 220px;
+    float: left;
+    min-height: 100%;
+    border-radius: 4px;
+    border-right: 1px  solid rgba(0, 0, 0, 0.1);
+    .cvd-g-btn2{
+      margin-left: 24px;
+    }
+    .top-area{
+      padding-left: 24px;
+      padding-right: 16px;
+    }
+    .group-list{
+      margin-top: 10px;
+      max-height: 390px;
+      overflow-y: auto;
+    }
+    .group-item{
+      padding-left: 24px;
+      height: 46px;
+      line-height: 46px;
+      .group-name{
+        cursor: pointer;
+        display: inline-block;
+        width:110px;
+      }
+      &.current{
+        background-color: rgba(0, 0, 0, 0.03);
+      }
+      &.status0:hover{
+        background-color: rgba(0, 0, 0, 0.03);
+      }
+      
+    }
+  }
+  .right-side{
+    padding:24px 0 1px 240px;
+    .content-width{
+      display: inline-block;
+      width: 360px;
+    }
+    .empty{
+      padding-top: 60px;
+      line-height: 1.5;
+      text-align: center;
+      color: rgba(0,0,0,0.3);
+    }
+    .cvd-textarea{
+      width: 400px;
+    }
+    .cvd-g-btn2{
+      margin-left: 28px;
+    }
+    .short-words-list{
+      margin-top: 10px;
+      max-height: 390px;
+      min-height: 160px;
+      overflow-y: auto;
+    }
+    .short-word-item{
+      font-size: 10px;
+      line-height: 1.4;
+      color: #4f6990;
+      border-radius: 4px;
+      &:hover{
+        background-color: #e8eef4;
+      }
+    }
+    .group-item{
+      overflow: hidden;
+      padding:4px 0px 4px 8px;
+      width: 456px;
+      font-size: 12px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      .group-name{
+        cursor: pointer;
+      }
+      .edit-area{
+        margin-right: 12px;
+      }
+      &.status1{
+        padding-left: 0;
+      }
+      &.status0:hover{
+        background-color: #e8eef4;
+      }
+      
+    }
+  }
+}

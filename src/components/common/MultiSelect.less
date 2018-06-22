@@ -1,0 +1,86 @@
+.m-custom-multi-select{
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  .select-header{
+    width: 240px;
+    height: 26px;
+    line-height: 24px;
+    border-radius: 100px;
+    background-color: #fff;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: PingFangSC;
+    padding-left: 12px;
+    padding-right: 17px;
+    position: relative;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all ease 0.3s;
+    .title{
+      display: inline-block;
+      max-width: 200px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .fa{
+      position: absolute;
+      right: 10px;
+      top: 6px;
+    }
+  }
+  &.not-triggered{
+    .select-header{
+      cursor: pointer;
+    }
+  }
+  &.triggered{}
+  .dropDownBox{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #fff;
+    z-index:2;
+    width: 330px;
+    border-radius: 2px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+    ul{
+      li{
+        line-height: 28px;
+        height: 28px;
+        padding: 0 10px;
+        &:hover{
+          background-color: #e8eef4;
+        }
+        >label{
+           width: 100%;
+        }
+      }
+    }
+    .op{
+      line-height: 48px;
+      height: 48px;
+      padding: 0px 10px;
+      text-align: left;
+      box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+      .btn-cancel{
+        width: 60px;
+        height: 24px;
+        border-radius: 100px;
+        line-height: 22px;
+      }
+      .btn-ok{
+        width: 60px;
+        height: 24px;
+        border-radius: 100px;
+        line-height: 22px;
+        margin-left: 12px;
+      }
+    }
+  }
+}

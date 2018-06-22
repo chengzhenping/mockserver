@@ -1,0 +1,21 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules/
+# node_modulesnpm-debug.log*
+
+
+# production
+# /dist
+
+# misc
+.DS_Store
+# .roadhogrc.mock.js
+# mock/
+.roadhogrc
+ossTool.js
+public/
+.idea/
+
+
+

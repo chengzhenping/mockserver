@@ -1,0 +1,306 @@
+/**
+*   cvd button 样式
+*/
+//green button
+//used in admin right side
+.cvd-btn-base{
+  display: inline-block;
+  padding:0 16px;
+  height: 26px;
+  line-height: 24px;
+  border-radius: 100px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  .ion-android-add{
+    margin-right: 8px;
+  }
+  .fa-sort-desc{
+    position: relative;
+    top: -2px;
+    margin-left: 8px;
+  }
+}
+
+.cvd-g-btn1{
+  &:extend(.cvd-btn-base all);
+  border-radius: 4px;
+  background-color: #00c3cc;
+  border: solid 1px #00c3cc;
+  color: #fff;
+  
+  &:hover,&:focus{
+    text-decoration: none;
+    color: #fff;
+    background: #01b5bd;
+    border: solid 1px #00a8af;
+    transition:0.5s;
+  }
+}
+//used in group-modal
+.cvd-g-btn2{
+  &:extend(.cvd-g-btn1 all);
+  padding:0 20px;
+  border-radius: 100px;
+
+}
+
+// used in 设置/渠道设置
+.cvd-blue-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #00c3cc;
+    line-height: 38px;
+    font-family: PingFangSC;
+    font-size: 14px;
+    color: #00c3cd;
+    cursor: pointer;
+    user-select: none;
+    &:hover{
+      background-color: #00c3cc;
+      border: solid 1px #00c3cc;
+      color: #ffffff;
+    }
+    i{
+      margin-right: 8px;
+    }
+}
+.cvd-blue-btn-1 {
+  min-width: 104px;
+  height: 26px;
+  border-radius: 100px;
+  background-color: #00c3cd;
+  border: solid 1px #42bcc1;
+  line-height: 24px;
+  font-family: PingFangSC;
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  border-radius: 100px;
+  &:hover{
+    background-color: #42bcc1;
+    border: solid 1px #42bcc1;
+    color: #fff;
+  }
+  &:active, &:focus{
+    background-color: #00c3cd !important;
+    color: #fff;
+    border: solid 1px #42bcc1;
+  }
+}
+//gray button
+//used in confirm, custom,and so on
+.cvd-gray-btn1{
+  &:extend(.cvd-btn-base all);
+  padding: 0 15px;
+  min-width: 104px;
+  background-color: #e8eef4;
+  border: solid 1px #dfe6ed;
+  color: rgba(79, 94, 110, 0.8);
+  &:hover{
+    background-color: #cad9e9;
+    border: solid 1px #ccd3db;
+    color: #4f5e6e;
+  }
+}
+
+//used in shortcut modal item cancel
+.cvd-gray-btn2{
+  &:extend(.cvd-btn-base all);
+  background-color: #e8eef4;
+  padding:0 8px;
+  height: 28px;
+  line-height: 26px;
+  font-size: 10px;
+  color: rgba(79, 94, 110, 0.8);
+}
+//yellow button
+//used in group-modal
+.cvd-y-btn1{
+  &:extend(.cvd-btn-base all);
+  min-width: 104px;
+  background-color: #f6b711;
+  border: solid 1px #edb112;
+  color:rgba(0, 0, 0, 0.8);
+  &:hover {
+    background-color: #e7ab0f;
+    border: solid 1px #dda30d;
+    transition:0.5s;
+    color:rgba(0, 0, 0, 0.8);
+  }
+  &[disabled] {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: solid 1px rgba(0, 0, 0, 0.02);
+    color: rgba(0, 0, 0, 0.3);
+    cursor: not-allowed;
+  }
+}
+//blue button
+//used in cvd-table
+.cvd-b-btn1{
+  &:extend(.cvd-btn-base all);
+  padding:0 12px;
+  margin-right: 12px;
+  background-color: #e8eef4;
+  border: solid 1px #dfe6ed;
+  color: rgba(79, 94, 110, 0.8);
+  &:hover,&.active{
+    background-color: #cad9e9;
+    border: solid 1px #dfe6ed;
+    color: #4f6990;
+    text-decoration: none;
+  }
+
+}
+
+//white button
+//used in cvd-table toolbar,and custom,and so on
+.cvd-w-btn1{
+  &:extend(.cvd-btn-base all);
+  padding:0 12px;
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.7);
+  border: solid 1px rgba(0, 0, 0, 0.2);
+}
+//used in hotquesiton tab item
+.cvd-w-btn2{
+  &:extend(.cvd-w-btn1 all);
+  padding:0 20px;
+  color: #4f5e6e;
+  border: solid 1px #dfe6ed;
+  &:hover,&.active{
+    background-color: #cad9e9;
+    border: solid 1px #ccd3db;
+    color: #4f6990;
+  }
+}
+// used in industry_semantic page
+.cvd-w-btn3{
+  &:extend(.cvd-w-btn1 all);
+  color: rgba(0, 0, 0, 0.25);
+  border: solid 1px rgba(0, 0, 0, 0.07);
+}
+
+//red button
+//used in shortcut modal item del
+.cvd-r-btn1{
+  &:extend(.cvd-gray-btn2 all);
+  color:#fff;
+  background-color: #f04134;
+  &:hover{
+    background-color: #e63d30;
+  }
+}
+
+
+
+
+//dashed btn
+//use in cvd-custom
+.cvd-dash-btn1{
+  &:extend(.cvd-btn-base all);
+  padding:0 20px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: dashed 1px rgba(0, 0, 0, 0.2);
+  &:hover{
+    color: #00c3cd;
+    border-color: #00c3cd;
+    transition:.3s;
+  }
+}
+//used in hotquestion tab
+.cvd-dash-btn2{
+  &:extend(.cvd-dash-btn1 all);
+  border-radius: 100px;
+  height: 26px;
+  line-height: 24px;
+}
+
+
+//cvd-switch,used in cvd-table,and custom,and so on
+.cvd-switch{
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 17px;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  .ball{
+      position: absolute;
+      left:0;
+      top: -2px;
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      border-radius: 11px;
+      background-color: #7a7a7a;
+      transition:left 0.3s;
+  }
+  &.active{
+      background-color: rgba(0, 204, 112, 0.3);
+      border: solid 1px rgba(65, 187, 193, 0.05);
+      .ball{
+        left:15px;
+        top:-3px;
+        background-color: #00cc71;
+        transition:left 0.3s;
+      }
+  }
+}
+
+//删除按钮
+.ion-android-remove-circle{
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  &:hover{
+    color: #42bcc1;
+  }
+}
+.u-close-normal{
+  color: rgba(0, 0, 0, 0.6);
+  &:hover{
+    color: #42bcc1;
+  }
+}
+.cvd-icon_delete1,
+.cvd-icon_add{
+  font-size: 22px;
+  color: #626262;
+  cursor: pointer;
+  &:hover{
+    color: #42bbc1;
+  }
+}
+.ion-android-add-circle{
+  cursor: pointer;
+  font-size: 14px;
+  color: #626262;
+}
+/*按钮在非全局操作的时候*/
+.cvd-disabled-btn,.cvd-disabled-btn:hover{
+    color: rgba(0, 0, 0, 0.25);
+    background-color: #f7f7f7;
+    border-color: #d9d9d9;
+    cursor: not-allowed;
+    *{
+      cursor: not-allowed !important;
+    }
+}
+
+.cvd-btn-inline{
+  height: 26px;
+  line-height: 24px;
+}
+.cvd-btn-lg{
+  height: 32px;
+  line-height: 30px;
+}

@@ -1,0 +1,120 @@
+.nav_container__azeF3{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 180px;
+	height: 100%;
+	min-height: 580px;
+	transition: width .3s;
+	background: url(../../assets/mask.png);
+  z-index: 1;
+	background-size: 100%;
+	font-family: PingFangSC sans-serif "Microsoft YaHei";
+
+	/*hack for safari*/
+	//min-height: 800px;
+	height: 100%;
+	/* -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0); */
+	/****/
+
+	&.collapsed{
+		width: 70px;
+		transition: width .3s;
+		.cvd-logo-txt{
+			display: inline-block;
+			width: 30px;
+			overflow: hidden;
+		}
+		.nav_item .txt{
+			display: none;
+		}
+	}
+
+	.xd_logo{
+		font-size:18px;
+		color: #fff;
+		font-weight: bold;
+		margin-top: 17px;
+		margin-bottom: 45px;
+		padding-left: 20px;
+		line-height: 25px;
+		height: 25px;
+		overflow: hidden;
+		.cvd-icon{
+			font-size: 25px;
+    		font-weight: normal;
+		}
+	}
+	.nav_item{
+		display: block;
+		padding-left: 20px;
+		line-height: 52px;
+		height: 52px;
+		overflow: hidden;
+		font-size: 14px;
+		position:relative;
+		color: #fff;
+		opacity: 0.8;
+		.txt{
+			position: relative;
+
+		}
+		.menuSwitchMesNotice{
+            width:8px;
+            height:8px;
+            position:absolute;
+            left:41px;
+            bottom:16px;
+            background-color:#ff5252;
+            float:right;
+            margin: 17px 16px 0 0;
+            border-radius: 50%;
+        }
+		.cvd-icon,.custom-icon{
+			font-size: 14px;
+		    display: inline-block;
+		    width: 28px;
+			height: 28px;
+		    border: 1px solid #fff;
+		    line-height: 28px;
+		    text-align: center;
+		    border-radius: 15px;
+		    margin-right: 7px;
+
+		}
+		.noBorder{
+		    border: none;
+		}
+		.fa-history{
+		    font-family: "FontAwesome" !important;
+		}
+		.cvd-robot{
+			font-size: 12px;
+		}
+		.ion-ios-people{
+		   font-size: 16px;
+		}
+		.cvd-robot:before{
+			position: relative;
+			top:-1px;
+		}
+		&.current{
+		  opacity: 1;
+		  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05) 45%, rgba(0, 0, 0, 0.05) 53%, rgba(0, 0, 0, 0.1));
+		}
+		&:hover,&:focus{
+			text-decoration: none;
+		}
+	}
+	.bottom{
+	    width:100%;
+	    position:absolute;
+	    bottom:16px;
+	}
+	.ant-menu-item{
+		padding: 0 !important;
+	}
+}
+
+

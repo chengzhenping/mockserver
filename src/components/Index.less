@@ -1,0 +1,65 @@
+@import url(./layouts/Default.less);
+.index-root {
+  min-width: 1000px;
+  padding-left: 25%;
+  .menu-wraper{
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    overflow: auto;
+    .ant-tree-title{
+      position: relative;
+    }
+    .op-list{
+      display: none;
+      margin-left: 20px;
+      color:#333;
+      .anticon{
+        margin-right: 5px;
+        &:hover{
+          color:#108ee9;
+        }
+      }
+    }
+    .ant-tree-title:hover{
+      .op-list{
+        display: inline;
+      }
+    }
+  }
+  .detail-wraper{
+    padding: 20px;
+    .tt{
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .cvd-textarea2{
+      width: 100%;
+      height: 500px;
+      font-size: 16px;
+    }
+    .cvd-g-btn1{
+      float: right;
+      margin-top: 10px;
+    }
+  }
+}
+.confirm_modal.folder-add{
+  .cvd-confirm-root{
+    padding-left: 20px;
+  }
+  .cvd-input2{
+    width: 300px;
+  }
+}
+.react-codemirror2{
+  height: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+  .CodeMirror{
+    height: 100%;
+  }
+}
